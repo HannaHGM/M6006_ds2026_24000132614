@@ -17,13 +17,15 @@ These stakeholder's are not just the drivers of the cars, as F1 is really a team
 
 ## Data
 
-Where the data comes from, how to get it, and what licence it is under.
-Put data files in `data/`: that folder is not committed to GitHub, so explain
-here how someone else can get the data.
+The data was sourced from Kaggle and is available at: https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020/data?select=qualifying.csv under a CC0: Public Domain license. 
+
+Please download the data folder which contains the necessary CSV files and analysisData file. This dataset was selected due to it having extensive historical and modern data that would be versatile for a range of research questions. The dataset was easily accessible and manageable due to it being separated into multiple CSV files. As not all of these tables were necessary for this project, I was able to simply not include those files instead of having to edit one large table that included everything. This dataset also came well recommended on Kaggle with many users commenting on its quality and usefulness. 
 
 ## Cleaning and preprocessing
+See notebooks 01_cleaning and 02_preprocessing
 
 ## Descriptive statistics and visualisation
+See notebook 03_exploratory_analysis
 
 ## Analysis plan
 
@@ -34,6 +36,11 @@ From the repository root: create and activate a virtual environment, download th
 ## Use of AI (required)
 
 - **Tool:** GitHub Copilot, Tutor agent (VS Code)
-- **Model:** Automatic selection, including GPT-5 and MAI Code Flash 2
+- **Model:** Automatic selection, including GPT-6 and MAI Code Flash 2
 - **Used for:** basic debugging, and asking for assistance with python and terminal syntax.
-- **Not used for:** writing any code or text.
+- **Not used for:** Writing any code or text included in the final output. 
+
+- - **Tool:** ChatGPT
+- **Model:** GPT-6 and 6.1, OpenAI
+- **Used for:** Recommendations for structuring notebooks and file tree, debugging discrepancies in merged tables, and assistance with debugging creating plots for the shiny app, including looking up syntax.
+- **Not used for:** Writing any code or text included in the final output. 
