@@ -1,9 +1,9 @@
-# Project title
+# Exploring the relationship between qualifying and finishing positions in Formula 1.
 
-One sentence on what this project finds out.
+To what extent does qualifying performance predict race results in F1, and how might this relationship change between circuits?
 
-- **Student ID:**
-- **Repository:** M5006-ds2026-studentnumber (or M6006-ds2026-studentnumber)
+- **Student ID: 24000132614**
+- **Repository:** M6006-ds2026-24000132614
 
 This project lives in `project/`. The repository is the whole course folder:
 `requirements.txt` and `.gitignore` are at the repository root, and the
