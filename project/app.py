@@ -1,9 +1,6 @@
 # Import libraries
 from shiny import ui, render, App
 import pandas as pd
-import numpy as np
-import requests
-import matplotlib.pyplot as plt
 from pathlib import Path
 import plotly.express as px
 from shinywidgets import output_widget, render_widget
@@ -37,6 +34,7 @@ app_ui = ui.page_fluid(
             "Select a circuit:",
             choices=sorted(validCircuits)
         ),
+   
     # Circuit scatter plot card
     ui.card(
         ui.card_header('Scatter Plot'),
@@ -63,16 +61,6 @@ app_ui = ui.page_fluid(
 
 # SERVER
 def server(input, output, session):
-
-    @render.text
-    def selectedCircuit():
-        return f"Selected circuit: {input.circuit()}"
-    
-    @render.text
-    def correlation(): 
-        circuitData = analysisData[analysisData["circuitName"] == input.circuit()]
-        correlation = circuitData["qualiPosition"].corr(circuitData["position"], method="spearman")
-        return f"Correlation: {correlation:.3f}"
     
     @render_widget
     def qualiScatter():
