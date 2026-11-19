@@ -29,20 +29,11 @@ here how someone else can get the data.
 
 ## How to run this
 
-From the repository root: create and activate a virtual environment, then
-`pip install -r requirements.txt`, then open the notebook in `project/`.
+From the repository root: create and activate a virtual environment, download the data folder and open the notebooks in `project/`, then run `pip install -r requirements.txt` before running the notebook code.
 
 ## Use of AI (required)
 
-In this module you may use AI to explain concepts, give you examples and
-practice exercises, and fix setup problems. It must not write the code, analysis
-or text you submit. Declare every tool you used here: the tool, the model (maker,
-family and version), what you used it for, and one or two concrete examples.
-For example:
-
 - **Tool:** GitHub Copilot, Tutor agent (VS Code)
-- **Model:** the maker, family and version shown in the chat's model picker
-- **Used for:** understanding how imputation changes variance; checking my
-  interpretation of odds ratios; fixing a package that would not install in my
-  `.venv`
-- **Not used for:** writing the analysis code or the text of this README
+- **Model:** Automatic selection, including GPT-5 and MAI Code Flash 2
+- **Used for:** basic debugging, and asking for assistance with python and terminal syntax.
+- **Not used for:** writing any code or text.
