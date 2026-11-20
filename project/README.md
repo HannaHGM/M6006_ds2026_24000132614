@@ -28,6 +28,14 @@ See notebooks 01_cleaning and 02_preprocessing
 See notebook 03_exploratory_analysis
 
 ## Analysis plan
+I plan to use supervised regression to predict race finishing position based on qualifying position, and expand this to include per-circuit predictions. I will start by creating a simply linear regression model, and then use multiple regression to investigate difference between circuits, and whether this improves predictions. If within scope, I may be able to add more circuit specific information or other variables, such as length, number of corners etc to examine differences in prediction accuracy. The primary variables I will use will be qualifying posititon, position, positionDiff, absolutePositionDiff and circuit info. 
+
+The data will be split into training and testing sets, ideally seperated by seasons rather than random selection, so that the models can be evaluated on races they have not seen before. 
+
+I will use mean absolute error to evaluate the accuracy of predicted positions. This can be comapred against a simple baseline, such as predicting that drivers will finish where they qualified. 
+
+Models performance will be compared to establish to what extent qualifying position predicts finishing position and how much introducing circuit-level data influences these predictions.
+
 
 ## How to run this
 
